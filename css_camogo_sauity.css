@@ -1,0 +1,51 @@
+* {box-sizing: border-box}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Spectral, serif;
+}
+
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    
+}
+.hyhy{
+    color: white;
+}
+.ggg{
+    float: left; margin-right: 10px;
+}
+.tr{
+    color: rgb(81, 0, 255);
+}
+.ff{
+    width: 250px;
+    height: 250px;
+}
+#Home {background-image: url(pliazh_vid_sverhu_bereg_162951_1920x1080.jpg); background-repeat: no-repeat; background-size: cover;}
+#News {background-color: green; background-repeat: no-repeat;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}

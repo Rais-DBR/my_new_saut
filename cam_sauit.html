@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css_camogo_sauity.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent" align="center">
+  <h3>Про нас</h3>
+  <p><b>Ласкаво просимо у туристичну компанію Join UP!</b></p>
+  <h4>Ми любимо наших клієнтів, а вони люблять нас</h4>
+  <h5 class="hyhy">Ми робимо все для того, щоб Вам подобалось у нас, та щоб Ви неодмінно захотіли повернутися ще раз!</h5>
+    <img src="5d5bc7c8103dc.jpg" class="ff">
+    <img src="5d5bc7e75d543.jpg" class="ff">
+    <img src="5d5bc9772ef20.jpg" class="ff"><br><br><br>
+</div>
+<div>  
+<img src="ggggggggg.jpg" style="width: 300px; height: auto; margin-right: 10px;" class="ggg">
+<h3 class="tr"><b>Ми входимо в топ 10 кращих агенцій Західної України</b></h3> <br> <p class="tr">Ви можете здійснити онлайн пошук туру прямо на нашому сайті, а щоб замовити тур, телефонуйте нашим менеджерам або відвідайте наш затишний офіс в центрі міста</p></figcaption>
+</div>  
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html>
